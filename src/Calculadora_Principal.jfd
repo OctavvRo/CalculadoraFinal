@@ -1,0 +1,198 @@
+JFDML JFormDesigner: "8.1.0.0.283" Java: "17.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, par l {comp panel1::::386:x, comp mostrar::::386:x}, space :::p}}"
+			"$verticalGroup": "par l {seq t {space :::p, comp mostrar::::58:x, space :::p, comp panel1:::p:173:p, space :p:20:p}}"
+		} ) {
+			name: "this"
+			"background": new java.awt.Color( 204, 204, 204, 255 )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.intellij.uiDesigner.core.GridLayoutManager ) {
+				"$columnCount": 4
+				"$rowCount": 4
+			} ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "b1"
+					"text": "1"
+					"font": &Font0 new java.awt.Font( "Roboto Light", 1, 14 )
+					"foreground": &Color0 new java.awt.Color( 255, 255, 255, 255 )
+					"background": &Color1 new java.awt.Color( 102, 102, 102, 255 )
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"fill": 3
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "b2"
+					"text": "2"
+					"font": #Font0
+					"foreground": #Color0
+					"background": #Color1
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"column": 1
+					"fill": 3
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "b3"
+					"text": "3"
+					"font": #Font0
+					"foreground": #Color0
+					"background": #Color1
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"column": 2
+					"fill": 3
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "b_clean"
+					"text": "C"
+					"font": #Font0
+					"foreground": #Color0
+					"background": #Color1
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"column": 3
+					"fill": 3
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "b4"
+					"text": "4"
+					"font": #Font0
+					"foreground": #Color0
+					"background": #Color1
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"row": 1
+					"fill": 3
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "b5"
+					"text": "5"
+					"font": #Font0
+					"foreground": #Color0
+					"background": #Color1
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"column": 1
+					"row": 1
+					"fill": 3
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "b6"
+					"text": "6"
+					"font": #Font0
+					"foreground": #Color0
+					"background": #Color1
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"column": 2
+					"row": 1
+					"fill": 3
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "b_dividir"
+					"text": "/"
+					"font": #Font0
+					"foreground": #Color0
+					"background": #Color1
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"column": 3
+					"row": 1
+					"fill": 3
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "b7"
+					"text": "7"
+					"font": #Font0
+					"foreground": #Color0
+					"background": #Color1
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"row": 2
+					"fill": 3
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "b8"
+					"text": "8"
+					"font": #Font0
+					"foreground": #Color0
+					"background": #Color1
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"column": 1
+					"row": 2
+					"fill": 3
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "b9"
+					"text": "9"
+					"font": #Font0
+					"foreground": #Color0
+					"background": #Color1
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"column": 2
+					"row": 2
+					"fill": 3
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "b_resta"
+					"text": "-"
+					"font": #Font0
+					"foreground": #Color0
+					"background": #Color1
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"column": 3
+					"row": 2
+					"fill": 3
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "b_suma"
+					"text": "+"
+					"font": #Font0
+					"foreground": #Color0
+					"background": #Color1
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"row": 3
+					"fill": 3
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "b0"
+					"text": "0"
+					"font": #Font0
+					"foreground": #Color0
+					"background": #Color1
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"column": 1
+					"row": 3
+					"fill": 3
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "b_multiplicacion"
+					"text": "*"
+					"font": #Font0
+					"foreground": #Color0
+					"background": #Color1
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"column": 2
+					"row": 3
+					"fill": 3
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "b_igual"
+					"text": "="
+					"font": #Font0
+					"foreground": #Color0
+					"background": #Color1
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"column": 3
+					"row": 3
+					"fill": 3
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "mostrar"
+				"font": new java.awt.Font( "Roboto Light", 1, 18 )
+				"editable": false
+				"horizontalAlignment": 4
+				"background": new java.awt.Color( 153, 153, 153, 255 )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 240, 145 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}
