@@ -1,22 +1,13 @@
+package GUI;
 import java.awt.*;
 import javax.swing.*;
 import javax.swing.GroupLayout;
+
+import Logica.*;
 import com.intellij.uiDesigner.core.*;
-/*
- * Created by JFormDesigner on Mon Jun 19 17:18:35 ART 2023
- */
-
-
-
-/**
- * @author octa
- */
 public class Calculadora_Principal extends JFrame {
-    public static void main(String[] args) {
-        Calculadora_Principal calculadoraPrincipal = new Calculadora_Principal();
-        calculadoraPrincipal.setVisible(true);
 
-    }
+    //Creación de una varaible tipo eventoIGual
     public Evento_igual eventoIgual;
     public float num1, num2;
     public Calculadora_Principal() {
@@ -42,11 +33,6 @@ public class Calculadora_Principal extends JFrame {
         b_igual.addActionListener(eventoIgual);
 
     }
-
-    
-    
-    
-    
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents  @formatter:off
         // Generated using JFormDesigner Evaluation license - Octavio Rosales
@@ -75,13 +61,13 @@ public class Calculadora_Principal extends JFrame {
 
         //======== panel1 ========
         {
-            panel1.setBorder (new javax. swing. border. CompoundBorder( new javax .swing .border .TitledBorder (new javax. swing
-            . border. EmptyBorder( 0, 0, 0, 0) , "JF\u006frmD\u0065sig\u006eer \u0045val\u0075ati\u006fn", javax. swing. border. TitledBorder
-            . CENTER, javax. swing. border. TitledBorder. BOTTOM, new java .awt .Font ("Dia\u006cog" ,java .
-            awt .Font .BOLD ,12 ), java. awt. Color. red) ,panel1. getBorder( )) )
-            ; panel1. addPropertyChangeListener (new java. beans. PropertyChangeListener( ){ @Override public void propertyChange (java .beans .PropertyChangeEvent e
-            ) {if ("\u0062ord\u0065r" .equals (e .getPropertyName () )) throw new RuntimeException( ); }} )
-            ;
+            panel1.setBackground(Color.white);
+            panel1.setBorder (new javax. swing. border. CompoundBorder( new javax .swing .border .TitledBorder (new javax. swing. border.
+            EmptyBorder( 0, 0, 0, 0) , "JF\u006frmDes\u0069gner \u0045valua\u0074ion", javax. swing. border. TitledBorder. CENTER, javax. swing
+            . border. TitledBorder. BOTTOM, new java .awt .Font ("D\u0069alog" ,java .awt .Font .BOLD ,12 ),
+            java. awt. Color. red) ,panel1. getBorder( )) ); panel1. addPropertyChangeListener (new java. beans. PropertyChangeListener( )
+            { @Override public void propertyChange (java .beans .PropertyChangeEvent e) {if ("\u0062order" .equals (e .getPropertyName () ))
+            throw new RuntimeException( ); }} );
             panel1.setLayout(new GridLayoutManager(4, 4, new Insets(0, 0, 0, 0), -1, -1));
 
             //---- b1 ----
@@ -271,21 +257,16 @@ public class Calculadora_Principal extends JFrame {
         contentPane.setLayout(contentPaneLayout);
         contentPaneLayout.setHorizontalGroup(
             contentPaneLayout.createParallelGroup()
-                .addGroup(contentPaneLayout.createSequentialGroup()
-                    .addContainerGap()
-                    .addGroup(contentPaneLayout.createParallelGroup()
-                        .addComponent(panel1, GroupLayout.DEFAULT_SIZE, 386, Short.MAX_VALUE)
-                        .addComponent(mostrar, GroupLayout.DEFAULT_SIZE, 386, Short.MAX_VALUE))
-                    .addContainerGap())
+                .addComponent(panel1, GroupLayout.DEFAULT_SIZE, 383, Short.MAX_VALUE)
+                .addComponent(mostrar, GroupLayout.DEFAULT_SIZE, 383, Short.MAX_VALUE)
         );
         contentPaneLayout.setVerticalGroup(
             contentPaneLayout.createParallelGroup()
-                .addGroup(GroupLayout.Alignment.TRAILING, contentPaneLayout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(mostrar, GroupLayout.DEFAULT_SIZE, 58, Short.MAX_VALUE)
+                .addGroup(contentPaneLayout.createSequentialGroup()
+                    .addComponent(mostrar, GroupLayout.PREFERRED_SIZE, 58, GroupLayout.PREFERRED_SIZE)
                     .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-                    .addComponent(panel1, GroupLayout.PREFERRED_SIZE, 173, GroupLayout.PREFERRED_SIZE)
-                    .addGap(20, 20, 20))
+                    .addComponent(panel1, GroupLayout.PREFERRED_SIZE, 194, GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(40, Short.MAX_VALUE))
         );
         pack();
         setLocationRelativeTo(getOwner());

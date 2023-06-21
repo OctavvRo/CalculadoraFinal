@@ -1,19 +1,17 @@
+package Logica;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
-public class Evento_sumar implements ActionListener {
-
+public class Evento_dividir implements ActionListener {
 
     //Creacion de un evento igual dentro del evento sumar
     private Evento_igual eventoIgual;
     private JTextField caja;
 
-    public Evento_sumar(Evento_igual eventoIgual, JTextField caja) {
+    public Evento_dividir(Evento_igual eventoIgual, JTextField caja) {
         this.eventoIgual = eventoIgual;
         this.caja = caja;
     }
-
     @Override
     public void actionPerformed(ActionEvent e) {
         String valor = caja.getText();
@@ -22,6 +20,6 @@ public class Evento_sumar implements ActionListener {
         caja.setText("");
         eventoIgual.numb1 = numb1;
         // Se pasa como operador al + para
-        eventoIgual.setOperador("+");
+        eventoIgual.setOperador("/");
     }
 }

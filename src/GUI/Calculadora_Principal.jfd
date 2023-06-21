@@ -4,8 +4,8 @@ new FormModel {
 	contentType: "form/swing"
 	root: new FormRoot {
 		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-			"$horizontalGroup": "par l {seq l {space :::p, par l {comp panel1::::386:x, comp mostrar::::386:x}, space :::p}}"
-			"$verticalGroup": "par l {seq t {space :::p, comp mostrar::::58:x, space :::p, comp panel1:::p:173:p, space :p:20:p}}"
+			"$horizontalGroup": "par l {comp panel1::::383:x, comp mostrar::l::383:x}"
+			"$verticalGroup": "par l {seq l {comp mostrar:::p:58:p, space :::p, comp panel1:::p:194:p, space ::40:x}}"
 		} ) {
 			name: "this"
 			"background": new java.awt.Color( 204, 204, 204, 255 )
@@ -14,6 +14,7 @@ new FormModel {
 				"$rowCount": 4
 			} ) {
 				name: "panel1"
+				"background": new java.awt.Color( 255, 255, 255, 255 )
 				add( new FormComponent( "javax.swing.JButton" ) {
 					name: "b1"
 					"text": "1"
@@ -191,8 +192,8 @@ new FormModel {
 				"background": new java.awt.Color( 153, 153, 153, 255 )
 			} )
 		}, new FormLayoutConstraints( null ) {
-			"location": new java.awt.Point( 240, 145 )
-			"size": new java.awt.Dimension( 400, 300 )
+			"location": new java.awt.Point( 75, 65 )
+			"size": new java.awt.Dimension( 385, 335 )
 		} )
 	}
 }
